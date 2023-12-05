@@ -1,4 +1,5 @@
 mod day_1;
+mod utils;
 
 // const INPUT_FILE: &'static str = "./input/day-1-2-small.in";
 const INPUT_FILE: &'static str = "./input/day-1-2.in";
@@ -42,7 +43,7 @@ fn main() {
     println!("Processing file: {}", INPUT_FILE);
 
     // File hosts.txt must exist in the current path
-    if let Ok(lines) = day_1::read_lines(INPUT_FILE) {
+    if let Ok(lines) = utils::read_lines(INPUT_FILE) {
         // Consumes the iterator, returns an (Optional) String
         for line in lines {
             if let Ok(l) = line {
