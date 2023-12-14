@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 cargo-check = "0.2.2"
+serde_json = { version = "1.0.108", features = [] }
